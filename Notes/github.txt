@@ -1,0 +1,46 @@
+npx create-react-app react-course //react-course can be replaced with another name
+how to start a project
+
+npm install react-router-dom@5 //add dom
+ctrl+c is closed 
+git clone<url>
+
+git add . 
+git status
+git commit -m"Chnaged meet up title'' //this is an example
+git push origin master 
+
+
+.map() =>{} //means to transform each item of the array. In the curvy bracket you will have the return. Which will return whatever you want. 
+
+git init
+git add . 
+git commit -m "first commit"
+git remote add origin https://github.com/angelinatr15/test4.git
+git push -u origin master
+
+
+To get latest code:
+git pull
+
+Create my own branch
+git branch //put name after branch
+git checkout //your branch name
+
+Before working
+git checkout master
+git pull
+
+TailWindCss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+To Create a delete button
+Create a function that takes in an id. in that function create a new variable to include the filter changes you want. In that function set the new state to become the new variable created. 
+
+pass the function down to the child as props
+Then create a button with the onclick that will take in no parameters and returns the new result 
+
+to start a node project 
+open folder 
+npm init

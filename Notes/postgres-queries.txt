@@ -1,0 +1,50 @@
+
+START POSTGRES COMMAND LINE
+	psql -U postgres
+
+CREATE DATABASE
+	CREATE DATABASE name;
+
+MOVE INTO DATABASE
+	\c database-name;
+
+CREATE TABLE
+	CREATE TABLE volunteer(
+	id SERIAL PRIMARY KEY, 
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	phone_number VARCHAR(255),
+	email VARCHAR(255),
+	availability VARCHAR(255)
+	);
+
+CHECK ALL TABLES
+\dt
+
+//serial means to add by increment 
+// varchar is limit of characters 
+
+ADD ROW INTO TABLE
+	INSERT INTO meats(type) VALUES ('fish');
+
+GET ALL TODOS
+	SELECT * FROM todo;
+
+GET 1 TODO BY ID 
+	SELECT * FROM todo WHERE todo_id=2;
+	pool.query("SELECT * FROM todo WHERE TODO_ID = $1", [id]);
+	
+	
+	
+	INSERT INTO meats() VALUES ('c-Noodle');
+	
+	INSERT INTO volunteer(first_name, last_name, phone_number, email, availability) VALUES ('Marlo', 'Leafwood','281-635-2222','marlo@gmail.com', 'Morning');
+	
+	ALTER TABLE contact ADD COLUMN email VARCHAR(255);
+	
+	UPDATE animals SET image ='https://cdn.pixabay.com/photo/2016/04/16/00/54/cats-1332320_960_720.jpg'WHERE id=4;
+
+		CREATE TABLE meats(
+	id SERIAL PRIMARY KEY, 
+	type VARCHAR(255)
+	);
